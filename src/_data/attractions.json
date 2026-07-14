@@ -1,0 +1,183 @@
+{
+  "title": "Area Guide",
+  "intro": "The cabin sits between Lake Cushman and Lake Kokanee, at the doorstep of Olympic National Park. Golf, hiking, swimming, disc golf, and the town of Hoodsport are all within a few minutes — here's what's nearby.",
+  "featured": {
+    "name": "LCMC Park & Boat Launch",
+    "tag": "On the Lake",
+    "distance": "150 yards — a 1-minute walk",
+    "description": "Just a quick walk from the front door: dock, boat launch, children's swimming area, picnic tables, and a lake fishing area. One guest parking pass is included with your stay.",
+    "image": "local-attractions--150-yards-from-the-property-1.webp",
+    "imageAlt": "Long dock stretching into Lake Cushman at the community park"
+  },
+  "categories": ["On the Lake", "Hiking", "Parks & Play", "Golf & Games"],
+  "attractions": [
+    {
+      "name": "Lake Cushman Golf Course",
+      "tag": "Golf & Games",
+      "distance": "5 min drive",
+      "description": "A challenge for all levels — low handicappers can hone their skills in a no-pressure environment while high handicappers will have their hands full. Meticulously maintained by the Lake Cushman Maintenance Company. 9 holes, par 72 (18 played), driving range, clubhouse, and a covered gazebo with cooking facilities.",
+      "image": "local-attractions--some-attractions-in-the-area-include.webp",
+      "imageAlt": "Course map of Lake Cushman Golf Course",
+      "links": [{ "label": "Website", "url": "https://www.lakecushmangolfcourse.com/" }]
+    },
+    {
+      "name": "Hoodsport Community Trail Park",
+      "tag": "Hiking",
+      "distance": "8 min drive",
+      "description": "Short trails off Highway 119 weaving back and forth across Dow Creek — a half-mile loop and a slightly steeper 1.5-mile loop, friendly to most hikers and built by local 4-H club members. Picnic tables and a restroom at the trailhead.",
+      "image": "local-attractions--hoodsport-community-trail-park-1.webp",
+      "imageAlt": "Trail map for the Hoodsport Trail",
+      "links": [{ "label": "Trail info (WTA)", "url": "https://www.wta.org/go-hiking/hikes/hoodsport-trail" }]
+    },
+    {
+      "name": "Hoodsport Hills Disc Golf Course",
+      "tag": "Golf & Games",
+      "distance": "8 min drive",
+      "description": "A family-friendly 9-hole disc golf course across Hwy 119 from the Trail Park — concrete pads, basket targets, moderately hilly and heavily wooded. Parking on both sides of the highway, picnic tables, restroom, and a gazebo.",
+      "image": "local-attractions--hoodsport-community-trail-park-3.webp",
+      "imageAlt": "Player throwing a disc from a concrete tee pad in the woods",
+      "links": [{ "label": "Website", "url": "https://portofhoodsport.us/hoodsport-hills-disc-golf-course/" }]
+    },
+    {
+      "name": "Lake Cushman Dam Viewpoint",
+      "tag": "On the Lake",
+      "distance": "10 min drive",
+      "description": "View Cushman Dam No. 1 — dedicated in 1926 when President Coolidge pressed a button in the White House — and the lake it holds back. Drivable by vehicle with plenty of parking.",
+      "image": "local-attractions--lake-cushman-dam-viewpoint-1.webp",
+      "imageAlt": "Welcome sign at the Cushman No. 1 Dam viewpoint",
+      "links": [{ "label": "Map", "url": "https://www.google.com/maps/place/Lake+Cushman+Dam+Viewpoint/@47.4235416,-123.2213033,17z" }]
+    },
+    {
+      "name": "Lake Cushman Lookout",
+      "tag": "On the Lake",
+      "distance": "10 min drive",
+      "description": "A beautiful scenic viewpoint just off North Lake Cushman Road, with a gravel parking area, info boards, and a restroom. Well worth the stop on your way to the north end of the lake.",
+      "image": "local-attractions--lake-cushman-dam-viewpoint-2.webp",
+      "imageAlt": "Panoramic view over Lake Cushman with snow-capped Olympic peaks",
+      "links": [{ "label": "Map", "url": "https://www.google.com/maps/place/Lake+Cushman+Lookout/@47.4235999,-123.2367065,14z" }]
+    },
+    {
+      "name": "Skokomish Park at Lake Cushman",
+      "tag": "Parks & Play",
+      "distance": "12 min drive",
+      "description": "Over 500 acres with three boat launches on Lake Cushman's freshwater shoreline. A fantastic day-use area with picnic sites, a shelter, and lawn games, plus 60+ campsites. Formerly Lake Cushman State Park.",
+      "image": "local-attractions--skokomish-lake-cushman-public-day-use-ar-1.webp",
+      "imageAlt": "Skokomish Park at Lake Cushman entrance sign",
+      "links": [{ "label": "Website", "url": "https://www.skokomishtourism.com/skokomish-park" }]
+    },
+    {
+      "name": "Bear Gulch Picnic Site",
+      "tag": "Parks & Play",
+      "distance": "20 min drive",
+      "description": "A popular picnic area beside the scenic North Fork Skokomish River on the north side of the lake. Picnic tables and a vault toilet, with a rocky beach for swimming and wading. On Forest Road 24 just south of Staircase.",
+      "links": [{ "label": "Website", "url": "https://www.fs.usda.gov/recarea/olympic/recarea/?recid=47787" }]
+    },
+    {
+      "name": "Copper Creek Trailhead",
+      "tag": "Hiking",
+      "distance": "20 min drive",
+      "description": "A steep 2.1-mile trail forming a short loop at the ridge top, passing the Brown Mule mine site and the abandoned Apex Mine along Copper Creek canyon. The ridge leads toward Timber Mountain and Lightning Peak.",
+      "image": "local-attractions--copper-creek-trailhead-1.webp",
+      "imageAlt": "Forest trail through mossy evergreens",
+      "links": [{ "label": "Website", "url": "https://www.fs.usda.gov/recarea/olympic/recarea/?recid=47811" }]
+    },
+    {
+      "name": "Shady Lane Trail",
+      "tag": "Hiking",
+      "distance": "25 min drive",
+      "description": "A favorite year-round family hike. Pass tall cedars, giant firs, and hemlock along the North Fork Skokomish — about a mile to the Staircase Ranger Station, and four miles round-trip if you continue to the rapids. Watch for elk.",
+      "image": "local-attractions--north-fork-skokomish-trailhead-1.webp",
+      "imageAlt": "Moss-covered old-growth forest along the Shady Lane trail",
+      "links": [{ "label": "Trail info (WTA)", "url": "https://www.wta.org/go-hiking/hikes/shady-lane" }]
+    },
+    {
+      "name": "North Fork Skokomish Trailhead",
+      "tag": "Hiking",
+      "distance": "25 min drive",
+      "description": "Day-hike the valley portion of this 15.1-mile trail that eventually reaches the Duckabush River. Planning an overnight? Check in with the Wilderness Information Center first.",
+      "links": [{ "label": "Website (NPS)", "url": "https://www.nps.gov/places/000/north-fork-skokomish-trailhead.htm" }]
+    },
+    {
+      "name": "Skokomish River Suspension Bridge",
+      "tag": "Hiking",
+      "distance": "25 min drive",
+      "description": "On the Staircase Rapids Trail — a $1.2-million suspension bridge completed in 2013 after the original washed out in 1998. Enjoy the long, terraced rapids from several perspectives, including from the bridge itself.",
+      "image": "local-attractions--north-fork-skokomish-trailhead-2.webp",
+      "imageAlt": "Suspension bridge over the North Fork Skokomish River",
+      "links": [{ "label": "Map", "url": "https://www.google.com/maps/place/Skokomish+River+Suspension+Bridge/@47.5242971,-123.342096,17z" }]
+    },
+    {
+      "name": "Staircase Rapids Loop",
+      "tag": "Hiking",
+      "distance": "25 min drive",
+      "description": "A short, beautiful 2-mile loop from the Staircase Ranger Station through quintessential Olympic forest — western redcedar, hemlock, and Douglas fir over lush sword ferns. Mostly level and great for families; continue toward Flapjack Lakes if you want more.",
+      "image": "local-attractions--mt-rose-trail-2.webp",
+      "imageAlt": "Staircase Rapids Trail map, Olympic National Park",
+      "links": [{ "label": "Trail guide", "url": "https://www.outdoorproject.com/united-states/washington/skokomish-river-staircase-rapids-loop-trail" }]
+    },
+    {
+      "name": "Mt Ellinor Trail",
+      "tag": "Hiking",
+      "distance": "30 min drive",
+      "description": "Rated 5 stars by many. The lower trail climbs gently through forest for the first mile, then gets steeper and rougher toward timberline. Upper and lower trailheads via Forest Road 2419 — the summit rewards with sweeping Olympic views (and often mountain goats).",
+      "image": "local-attractions--mt-ellinor-upper-trail-head-1.webp",
+      "imageAlt": "Mount Ellinor trail map, Olympic National Forest",
+      "links": [
+        { "label": "Upper trailhead", "url": "https://www.fs.usda.gov/recarea/olympic/recreation/recarea/?recid=48059" },
+        { "label": "Lower trailhead", "url": "https://www.fs.usda.gov/recarea/olympic/recarea/?recid=80676" }
+      ]
+    },
+    {
+      "name": "Mt Rose Trail",
+      "tag": "Hiking",
+      "distance": "25 min drive",
+      "description": "A serious workout: from Hoodsport, take WA-119 about 10 miles to Forest Road 24, then 2 miles to the trailhead. Steep switchbacks to a summit loop with views over Lake Cushman.",
+      "image": "local-attractions--mt-rose-trail-1.webp",
+      "imageAlt": "Mount Rose summit trail map",
+      "links": [{ "label": "Website", "url": "https://www.fs.usda.gov/recarea/olympic/recreation/recarea/?recid=48065" }]
+    },
+    {
+      "name": "Big Creek Loop Trail",
+      "tag": "Hiking",
+      "distance": "20 min drive",
+      "description": "A four-mile loop around Big Creek Basin through mature second growth, with benches at creek crossings for lunch in beautiful surroundings. Connects to the Mt Ellinor trails for a 6.2-mile historic climbing route to the summit.",
+      "image": "local-attractions--big-creek-loop-trail-1.webp",
+      "imageAlt": "Big Creek Campground loop trail map",
+      "links": [{ "label": "Website", "url": "https://www.fs.usda.gov/recarea/olympic/recarea/?recid=47791" }]
+    },
+    {
+      "name": "Playland Park",
+      "tag": "Parks & Play",
+      "distance": "5 min drive",
+      "description": "A children's playground in Division 18 of the Lake Cushman community — a quick hop from the cabin for burning off little-kid energy.",
+      "image": "local-attractions--big-creek-loop-trail-2.webp",
+      "imageAlt": "Colorful playground structure among evergreen trees",
+      "links": [{ "label": "Map", "url": "https://www.google.com/maps/place/Playland+Park/@47.409193,-123.2037822,17z" }]
+    },
+    {
+      "name": "Division 1 Park",
+      "tag": "Parks & Play",
+      "distance": "8 min drive",
+      "description": "The big community park: covered gazebo with BBQs, dock, boat launch, children's and adult swimming areas, volleyball, basketball, playground equipment, and restrooms with showers. Park hosts on site Memorial Day through Labor Day.",
+      "image": "local-attractions--division-1-park-1.webp",
+      "imageAlt": "Sandy beach and swimming area at the Division 1 community park",
+      "links": [{ "label": "Map", "url": "https://www.google.com/maps/place/Lake+Cushman+Private+Park+%28LCMC%29/@47.4857607,-123.2433502,15z" }]
+    },
+    {
+      "name": "Division 3 Park",
+      "tag": "Parks & Play",
+      "distance": "15 min drive",
+      "description": "Covered gazebo with BBQs, dock, boat launch, swimming areas, volleyball, basketball, horseshoe court, merry-go-round, and restrooms with showers. Park hosts Memorial Day through Labor Day.",
+      "links": [{ "label": "Map", "url": "https://www.google.com/maps/place/421+N+Wynoochee+Dr,+Hoodsport,+WA+98548/@47.4585013,-123.2176272,594m" }]
+    },
+    {
+      "name": "Division 14 Park",
+      "tag": "On the Lake",
+      "distance": "100 yards — walk",
+      "description": "The park at the end of the road: dock, boat launch, children's swimming area, picnic tables, and a lake fishing area behind the parking lot. This is the one you can see from the porch.",
+      "image": "local-attractions--division-14-park-100-yards-from-property.webp",
+      "imageAlt": "Dock and boat launch at the Division 14 park on Lake Cushman",
+      "links": [{ "label": "Map", "url": "https://www.google.com/maps/place/N+Deer+Ln+W,+Hoodsport,+WA+98548/@47.4270611,-123.2191868,297m" }]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="/">
+      <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+        <path d="M16 2 L26 16 h-5 l6 9 H5 l6-9 H6 Z" fill="#2e4a3b"/>
+        <rect x="14" y="25" width="4" height="5" fill="#9a4f1e"/>
+      </svg>
+      {{ site.shortName }}
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+      <span class="bars"></span>
+    </button>
+    <nav id="site-nav" class="nav" aria-label="Main">
+      {%- for item in navigation.items %}
+      <a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
+      {%- endfor %}
+      <a class="btn btn--primary" href="{{ navigation.cta.url }}" data-analytics="nav_book_click">{{ navigation.cta.label }}</a>
+    </nav>
+  </div>
+</header>

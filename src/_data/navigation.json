@@ -1,0 +1,12 @@
+{
+  "items": [
+    { "label": "Home", "url": "/" },
+    { "label": "Gallery", "url": "/gallery/" },
+    { "label": "The Cabin", "url": "/the-cabin/" },
+    { "label": "Area Guide", "url": "/area-guide/" },
+    { "label": "FAQs", "url": "/faqs/" },
+    { "label": "About", "url": "/about/" },
+    { "label": "Contact", "url": "/contact/" }
+  ],
+  "cta": { "label": "Book Your Stay", "url": "/book/" }
+}

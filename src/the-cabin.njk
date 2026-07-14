@@ -1,0 +1,85 @@
+---
+layout: layouts/base.njk
+title: The Cabin
+description: Amenities, sleeping arrangements, house rules, and pet policy at the MACS Cushman Cabin.
+permalink: /the-cabin/
+---
+<div class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Amenities &amp; Details</p>
+    <h1>{{ cabin.title }}</h1>
+    <p>{{ cabin.intro }}</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Everything Included</p>
+      <h2>Amenities</h2>
+    </div>
+    <div class="amenities">
+      {%- for group in cabin.amenityGroups %}
+      <div class="amenity">
+        <h3>{{ group.title }}</h3>
+        <ul>
+          {%- for item in group.items %}
+          <li>{{ item }}</li>
+          {%- endfor %}
+        </ul>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Where Everyone Sleeps</p>
+      <h2>Sleeping arrangements</h2>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th scope="col">Room</th><th scope="col">Level</th><th scope="col">Beds</th></tr>
+        </thead>
+        <tbody>
+          {%- for b in cabin.bedrooms %}
+          <tr><td>{{ b.name }}</td><td>{{ b.level }}</td><td>{{ b.beds }}</td></tr>
+          {%- endfor %}
+        </tbody>
+      </table>
+    </div>
+    <p class="mt-2"><a href="/gallery/">See photos of every room →</a></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap grid grid--2">
+    <div class="amenity">
+      <h3>{{ cabin.rules.title }}</h3>
+      <ul>
+        {%- for item in cabin.rules.items %}
+        <li>{{ item }}</li>
+        {%- endfor %}
+      </ul>
+    </div>
+    <div class="amenity">
+      <h3>{{ cabin.petPolicy.title }}</h3>
+      <ul>
+        {%- for item in cabin.petPolicy.items %}
+        <li>{{ item }}</li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark cta-band">
+  <div class="wrap">
+    <h2>Sound like your kind of place?</h2>
+    <p>Check availability and book your dates through Vrbo.</p>
+    <a class="btn btn--primary btn--lg" href="/book/" data-analytics="cabin_book_click">Book Your Stay</a>
+  </div>
+</section>

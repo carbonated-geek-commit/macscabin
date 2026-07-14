@@ -1,0 +1,15 @@
+{
+  "name": "macs-cushman-cabin",
+  "version": "1.0.0",
+  "description": "MACS Cushman Cabin — vacation rental site for Lake Cushman, Hoodsport WA",
+  "private": true,
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "optimize-images": "node tools/optimize-images.js"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "sharp": "^0.33.0"
+  }
+}

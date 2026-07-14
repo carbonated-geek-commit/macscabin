@@ -1,0 +1,41 @@
+---
+layout: layouts/base.njk
+title: Gallery
+description: Photo tour of the MACS Cushman Cabin — every room, every level, and Lake Cushman down the road.
+permalink: /gallery/
+---
+<div class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Photo Tour</p>
+    <h1>Gallery</h1>
+    <p>{{ gallery.intro }}</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <nav class="gallery-nav" aria-label="Gallery sections">
+      {%- for s in gallery.sections %}
+      <a href="#{{ s.title | slug2 }}">{{ s.title }}</a>
+      {%- endfor %}
+    </nav>
+    {%- for s in gallery.sections %}
+    <div class="gallery-section">
+      <h2 id="{{ s.title | slug2 }}">{{ s.title }}</h2>
+      <div class="gallery-grid">
+        {%- for img in s.images %}
+        <button type="button" data-lightbox aria-label="View larger: {{ img.alt }}">
+          <img src="/assets/images/{{ img.file }}" alt="{{ img.alt }}" loading="lazy">
+        </button>
+        {%- endfor %}
+      </div>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+
+<dialog id="lightbox" class="lightbox" aria-label="Enlarged photo">
+  <button type="button" class="lightbox__close" aria-label="Close">×</button>
+  <img src="" alt="">
+  <p class="lightbox__caption"></p>
+</dialog>

@@ -1,0 +1,32 @@
+---
+layout: layouts/base.njk
+title: Book Your Stay
+description: Check availability and book the MACS Cushman Cabin on Vrbo.
+permalink: /book/
+---
+<div class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Reservations</p>
+    <h1>Book Your Stay</h1>
+    <p>Reservations are currently managed through Vrbo — secure checkout, verified reviews, and instant confirmation.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="book-panel">
+      <h2>Check availability on Vrbo</h2>
+      <p>Pick your dates, see current rates, and book in a couple of minutes.</p>
+      <a class="btn btn--primary btn--lg" href="{{ site.booking.vrboUrl }}" target="_blank" rel="noopener" data-analytics="vrbo_outbound_click">Book on Vrbo ↗</a>
+      <p class="muted mt-4" style="font-size: 0.95rem;">Questions first? <a href="/contact/">Contact us</a> or send an <a href="{{ site.inquiryFormUrl }}" target="_blank" rel="noopener">inquiry</a>.</p>
+    </div>
+
+    <div class="calendar-embed">
+      <div class="section-head">
+        <h2>Availability at a glance</h2>
+        <p>Synced automatically from the Vrbo booking calendar. Always confirm exact dates on Vrbo.</p>
+      </div>
+      <iframe src="{{ site.booking.calendarEmbedUrl }}" title="Availability calendar" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>

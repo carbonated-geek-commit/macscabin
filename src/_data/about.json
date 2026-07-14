@@ -1,0 +1,25 @@
+{
+  "title": "About the Cabin",
+  "story": [
+    "The Lake Cushman Cabin is privately owned by two families who live locally. The cabin was purchased in 2022, then fully renovated and updated — the owners use it often and love enjoying the lake.",
+    "With multiple levels and two living spaces furnished with plush sectionals, this inviting retreat is perfect for accommodating multiple guests while still feeling connected. You'll find two smart TVs, a gas grill, a fire pit, a washer and dryer, and a well-equipped full kitchen with stainless steel appliances — coffee maker, espresso machine and grinder, air fryer, blender, mixer, waffle maker, griddle, toaster, crock pot, and dishwasher.",
+    "Located between two lakes — Lake Cushman and Lake Kokanee — the cabin puts golf, disc golf, trailheads, viewpoints, parks, and the Skokomish River suspension bridge all within about five minutes' drive, some within walking distance. Included in your rental is one guest pass for the nearby private lakes and parks. The town of Hoodsport, ten minutes away, offers local shops, restaurants, a gas station market, and a hardware store."
+  ],
+  "history": [
+    {
+      "title": "The Cushman Hydro Project",
+      "text": "One of the first major dams in the Pacific Northwest was Tacoma Power's Cushman Dam No. 1, dedicated in 1926 when President Calvin Coolidge pressed a button in the White House to energize the project. Construction began in 1924 near Potlatch on the North Fork of the Skokomish River, at times employing as many as five hundred men. The concrete arch dam stands 275 feet high and 1,111 feet long, holding back Lake Cushman's 23 miles of shoreline — a 4,010-acre lake formed in a glacial trough from the last ice age. Its power still travels a forty-mile transmission line to Tacoma, including a 6,244-foot suspension across the Tacoma Narrows. A second, smaller dam, Cushman No. 2, was completed in December 1930.",
+      "links": [
+        { "label": "Cushman Hydro Project — Tacoma Public Utilities", "url": "https://www.mytpu.org/about-tpu/services/power/about-tacoma-power/dams-power-sources/cushman-hydro-project/" },
+        { "label": "Lake Cushman & the dam", "url": "https://www.lakecushmanmc.com/lake-cushman--dam.html" }
+      ]
+    },
+    {
+      "title": "The Antlers Lodge",
+      "text": "The Antlers Hotel opened June 15, 1899 at the edge of the original Lake Cushman, backed by virgin timber and the Olympic Mountains. Built of hewed logs with large bay windows and a rustic but elegant interior, it hung a set of deer horns in every room. The Antlers closed after the 1922 tourist season and was burned in 1925 — its remains disappeared under 160 feet of rising water behind the new dam. One of its founders stayed on, building a new home partly from the hotel's lumber and furnishing it with the hotel's own pieces.",
+      "links": [
+        { "label": "The Antlers Lodge — Lake Cushman history", "url": "https://www.lakecushmanmc.com/the-antlers-lodge.html" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "hero": {
+    "heading": "Your basecamp on Lake Cushman",
+    "subheading": "A spacious four-bedroom cabin in Hoodsport, WA — modern comforts, rustic charm, and a private lake park one minute from the front porch.",
+    "image": "pictures--exterior-2.webp",
+    "imageAlt": "The MACS Cushman Cabin, an A-frame style cabin surrounded by evergreen trees"
+  },
+  "highlights": [
+    { "label": "4 Bedrooms + Bunk Room" },
+    { "label": "3 Bathrooms" },
+    { "label": "1,800 Square Feet" },
+    { "label": "150 Yards to the Lake" },
+    { "label": "Dog Friendly" },
+    { "label": "Fast WiFi" }
+  ],
+  "intro": "Escape to this spacious four-bedroom home in Hoodsport, where modern amenities meet rustic cabin charm. The cabin sits in a private Lake Cushman community — the park with swimming area, dock, picnic tables, and boat launch is visible from the front porch, a brief one-minute walk away. Venture further and you're at the doorstep of Olympic National Park, with the Hood Canal, Hoodsport Coffee Co, Potlatch Brewing Co, Hoodsport Winery, and Lilliwaup Tidelands State Park all nearby.",
+  "featureCards": [
+    {
+      "title": "The Lake, Right There",
+      "text": "Swim, fish, or launch your boat at the private community park 150 yards from the door. One guest parking pass is included with your stay.",
+      "image": "pictures--park-1.webp",
+      "imageAlt": "Dock and swimming area on Lake Cushman at the community park",
+      "link": { "label": "See the area guide", "url": "/area-guide/" }
+    },
+    {
+      "title": "Room for Everyone",
+      "text": "Four queen bedrooms, a kid-favorite bunk room, two living rooms with plush sectionals and smart TVs, and three bathrooms — one on every level.",
+      "image": "pictures--main-living-room-1.webp",
+      "imageAlt": "Main living room with sectional couch and wood-beamed ceiling",
+      "link": { "label": "Tour the cabin", "url": "/the-cabin/" }
+    },
+    {
+      "title": "Evenings by the Fire",
+      "text": "A paver patio with a fire pit, picnic table, and gas grill — surrounded by tall evergreens and quiet.",
+      "image": "pictures--outdoor-space-2.webp",
+      "imageAlt": "Backyard fire pit glowing on the paver patio at dusk",
+      "link": { "label": "Book your stay", "url": "/book/" }
+    }
+  ],
+  "park": {
+    "title": "Park & Boat Launch",
+    "text": "The community park and boat launch are privately owned by the Lake Cushman Maintenance Company (LCMC), visible from the front porch and only a 150-yard walk away. Dock, boat launch, children's swimming area, picnic tables, and a lake fishing area.",
+    "items": [
+      "One guest parking pass for the park is included ($150 fee if misplaced)",
+      "An LCMC pass is required to launch any boat — available by request for $50 per day",
+      "The driveway fits a pickup and trailer"
+    ],
+    "image": "local-attractions--150-yards-from-the-property-1.webp",
+    "imageAlt": "Long dock stretching into Lake Cushman with forested mountains behind"
+  },
+  "goodToKnow": [
+    "Check-in after 4:00 PM · Check-out before 11:00 AM",
+    "Minimum age to rent: 25",
+    "Up to 2 dogs welcome (pet fees apply)",
+    "No smoking · Exterior security cameras only"
+  ]
+}

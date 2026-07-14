@@ -1,0 +1,46 @@
+---
+layout: layouts/base.njk
+title: Contact
+description: Contact the MACS Cushman Cabin — phone, email, and inquiry form.
+permalink: /contact/
+---
+<div class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Say Hello</p>
+    <h1>Contact</h1>
+    <p>Questions about the cabin, your stay, or the area? We're locals — ask away.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap contact-grid">
+    <div>
+      <h2>Reach us directly</h2>
+      <ul class="contact-list mt-4">
+        <li>
+          <strong>Phone</strong>
+          <a href="tel:+12532546862">{{ site.phone }}</a>
+        </li>
+        <li>
+          <strong>Email</strong>
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </li>
+        <li>
+          <strong>The Cabin</strong>
+          {{ site.address.street }}<br>{{ site.address.city }}, {{ site.address.state }} {{ site.address.zip }}
+        </li>
+        <li>
+          <strong>Follow along</strong>
+          <a href="{{ site.social.facebook }}" target="_blank" rel="noopener">Facebook</a> ·
+          <a href="{{ site.social.instagram }}" target="_blank" rel="noopener">Instagram</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>Send an inquiry</h2>
+      <p class="mt-2">Planning a stay and want to check something first — group size, boat passes, longer stays? Use the inquiry form and we'll get back to you.</p>
+      <p class="mt-2"><a class="btn btn--ghost" href="{{ site.inquiryFormUrl }}" target="_blank" rel="noopener" data-analytics="inquiry_form_click">Open Inquiry Form ↗</a></p>
+      <p class="muted mt-4">Ready to book? Head straight to <a href="/book/">reservations</a>.</p>
+    </div>
+  </div>
+</section>

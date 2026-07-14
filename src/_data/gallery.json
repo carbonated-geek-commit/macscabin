@@ -1,0 +1,337 @@
+{
+  "intro": "Take a look around \u2014 every room, every level, and the lake down the road.",
+  "sections": [
+    {
+      "title": "Exterior",
+      "images": [
+        {
+          "file": "pictures--exterior-1.webp",
+          "alt": "Exterior of the cabin among evergreen trees \u2014 photo 1"
+        },
+        {
+          "file": "pictures--exterior-2.webp",
+          "alt": "Exterior of the cabin among evergreen trees \u2014 photo 2"
+        },
+        {
+          "file": "pictures--exterior-3.webp",
+          "alt": "Exterior of the cabin among evergreen trees \u2014 photo 3"
+        },
+        {
+          "file": "pictures--exterior-4.webp",
+          "alt": "Exterior of the cabin among evergreen trees \u2014 photo 4"
+        }
+      ]
+    },
+    {
+      "title": "Kitchen",
+      "images": [
+        {
+          "file": "pictures--kitchen-1.webp",
+          "alt": "Full kitchen with white cabinets, butcher-block counters, and stainless appliances \u2014 photo 1"
+        },
+        {
+          "file": "pictures--kitchen-2.webp",
+          "alt": "Full kitchen with white cabinets, butcher-block counters, and stainless appliances \u2014 photo 2"
+        },
+        {
+          "file": "pictures--kitchen-3.webp",
+          "alt": "Full kitchen with white cabinets, butcher-block counters, and stainless appliances \u2014 photo 3"
+        },
+        {
+          "file": "pictures--kitchen-4.webp",
+          "alt": "Full kitchen with white cabinets, butcher-block counters, and stainless appliances \u2014 photo 4"
+        }
+      ]
+    },
+    {
+      "title": "Dining Area",
+      "images": [
+        {
+          "file": "pictures--dining-area-1.webp",
+          "alt": "Dining area with bar seating under wood-beamed ceilings \u2014 photo 1"
+        },
+        {
+          "file": "pictures--dining-area-2.webp",
+          "alt": "Dining area with bar seating under wood-beamed ceilings \u2014 photo 2"
+        },
+        {
+          "file": "pictures--dining-area-3.webp",
+          "alt": "Dining area with bar seating under wood-beamed ceilings \u2014 photo 3"
+        },
+        {
+          "file": "pictures--dining-area-4.webp",
+          "alt": "Dining area with bar seating under wood-beamed ceilings \u2014 photo 4"
+        }
+      ]
+    },
+    {
+      "title": "Main Living Room",
+      "images": [
+        {
+          "file": "pictures--main-living-room-1.webp",
+          "alt": "Main living room with sectional couch and smart TV \u2014 photo 1"
+        },
+        {
+          "file": "pictures--main-living-room-2.webp",
+          "alt": "Main living room with sectional couch and smart TV \u2014 photo 2"
+        },
+        {
+          "file": "pictures--main-living-room-3.webp",
+          "alt": "Main living room with sectional couch and smart TV \u2014 photo 3"
+        },
+        {
+          "file": "pictures--main-living-room-4.webp",
+          "alt": "Main living room with sectional couch and smart TV \u2014 photo 4"
+        }
+      ]
+    },
+    {
+      "title": "Lower Living Room",
+      "images": [
+        {
+          "file": "pictures--lower-living-room-1.webp",
+          "alt": "Lower living room with sectional couch \u2014 photo 1"
+        },
+        {
+          "file": "pictures--lower-living-room-2.webp",
+          "alt": "Lower living room with sectional couch \u2014 photo 2"
+        },
+        {
+          "file": "pictures--lower-living-room-3.webp",
+          "alt": "Lower living room with sectional couch \u2014 photo 3"
+        },
+        {
+          "file": "pictures--lower-living-room-4.webp",
+          "alt": "Lower living room with sectional couch \u2014 photo 4"
+        }
+      ]
+    },
+    {
+      "title": "Deer Bedroom (Upstairs)",
+      "images": [
+        {
+          "file": "pictures--deer-bedroom-upstairs-1.webp",
+          "alt": "Deer Bedroom with queen bed under vaulted wood ceiling \u2014 photo 1"
+        },
+        {
+          "file": "pictures--deer-bedroom-upstairs-2.webp",
+          "alt": "Deer Bedroom with queen bed under vaulted wood ceiling \u2014 photo 2"
+        },
+        {
+          "file": "pictures--deer-bedroom-upstairs-3.webp",
+          "alt": "Deer Bedroom with queen bed under vaulted wood ceiling \u2014 photo 3"
+        },
+        {
+          "file": "pictures--deer-bedroom-upstairs-4.webp",
+          "alt": "Deer Bedroom with queen bed under vaulted wood ceiling \u2014 photo 4"
+        }
+      ]
+    },
+    {
+      "title": "Bear Bedroom (Upstairs)",
+      "images": [
+        {
+          "file": "pictures--bear-bedroom-upstairs-1.webp",
+          "alt": "Bear Bedroom with queen bed and green bedding \u2014 photo 1"
+        },
+        {
+          "file": "pictures--bear-bedroom-upstairs-2.webp",
+          "alt": "Bear Bedroom with queen bed and green bedding \u2014 photo 2"
+        },
+        {
+          "file": "pictures--bear-bedroom-upstairs-3.webp",
+          "alt": "Bear Bedroom with queen bed and green bedding \u2014 photo 3"
+        },
+        {
+          "file": "pictures--bear-bedroom-upstairs-4.webp",
+          "alt": "Bear Bedroom with queen bed and green bedding \u2014 photo 4"
+        }
+      ]
+    },
+    {
+      "title": "Bathroom (Upstairs)",
+      "images": [
+        {
+          "file": "pictures--bathroom-upstairs-1.webp",
+          "alt": "Upstairs bathroom \u2014 photo 1"
+        },
+        {
+          "file": "pictures--bathroom-upstairs-2.webp",
+          "alt": "Upstairs bathroom \u2014 photo 2"
+        },
+        {
+          "file": "pictures--bathroom-upstairs-3.webp",
+          "alt": "Upstairs bathroom \u2014 photo 3"
+        },
+        {
+          "file": "pictures--bathroom-upstairs-4.webp",
+          "alt": "Upstairs bathroom \u2014 photo 4"
+        }
+      ]
+    },
+    {
+      "title": "Mt Ellinor Bedroom (Main Level)",
+      "images": [
+        {
+          "file": "pictures--mt-ellinor-bedroom-main-level-1.webp",
+          "alt": "Mt Ellinor Bedroom with queen bed \u2014 photo 1"
+        },
+        {
+          "file": "pictures--mt-ellinor-bedroom-main-level-2.webp",
+          "alt": "Mt Ellinor Bedroom with queen bed \u2014 photo 2"
+        },
+        {
+          "file": "pictures--mt-ellinor-bedroom-main-level-3.webp",
+          "alt": "Mt Ellinor Bedroom with queen bed \u2014 photo 3"
+        },
+        {
+          "file": "pictures--mt-ellinor-bedroom-main-level-4.webp",
+          "alt": "Mt Ellinor Bedroom with queen bed \u2014 photo 4"
+        }
+      ]
+    },
+    {
+      "title": "Bathroom (Main Level)",
+      "images": [
+        {
+          "file": "pictures--bathroom-main-level-1.webp",
+          "alt": "Main level bathroom with shower \u2014 photo 1"
+        },
+        {
+          "file": "pictures--bathroom-main-level-2.webp",
+          "alt": "Main level bathroom with shower \u2014 photo 2"
+        },
+        {
+          "file": "pictures--bathroom-main-level-3.webp",
+          "alt": "Main level bathroom with shower \u2014 photo 3"
+        },
+        {
+          "file": "pictures--bathroom-main-level-4.webp",
+          "alt": "Main level bathroom with shower \u2014 photo 4"
+        }
+      ]
+    },
+    {
+      "title": "Evergreen Bedroom (Lower Level)",
+      "images": [
+        {
+          "file": "pictures--evergreen-bedroom-lower-level-1.webp",
+          "alt": "Evergreen Bedroom with queen bed \u2014 photo 1"
+        },
+        {
+          "file": "pictures--evergreen-bedroom-lower-level-2.webp",
+          "alt": "Evergreen Bedroom with queen bed \u2014 photo 2"
+        },
+        {
+          "file": "pictures--evergreen-bedroom-lower-level-3.webp",
+          "alt": "Evergreen Bedroom with queen bed \u2014 photo 3"
+        },
+        {
+          "file": "pictures--evergreen-bedroom-lower-level-4.webp",
+          "alt": "Evergreen Bedroom with queen bed \u2014 photo 4"
+        }
+      ]
+    },
+    {
+      "title": "Bunk Room (Lower Level)",
+      "images": [
+        {
+          "file": "pictures--bunk-room-lower-level-1.webp",
+          "alt": "Bunk room with two queen bunk beds \u2014 photo 1"
+        },
+        {
+          "file": "pictures--bunk-room-lower-level-2.webp",
+          "alt": "Bunk room with two queen bunk beds \u2014 photo 2"
+        },
+        {
+          "file": "pictures--bunk-room-lower-level-3.webp",
+          "alt": "Bunk room with two queen bunk beds \u2014 photo 3"
+        }
+      ]
+    },
+    {
+      "title": "Bathroom (Lower Level)",
+      "images": [
+        {
+          "file": "pictures--bathroom-lower-level-1.webp",
+          "alt": "Lower level bathroom with shower \u2014 photo 1"
+        },
+        {
+          "file": "pictures--bathroom-lower-level-2.webp",
+          "alt": "Lower level bathroom with shower \u2014 photo 2"
+        },
+        {
+          "file": "pictures--bathroom-lower-level-3.webp",
+          "alt": "Lower level bathroom with shower \u2014 photo 3"
+        },
+        {
+          "file": "pictures--bathroom-lower-level-4.webp",
+          "alt": "Lower level bathroom with shower \u2014 photo 4"
+        }
+      ]
+    },
+    {
+      "title": "Outdoor Space",
+      "images": [
+        {
+          "file": "pictures--outdoor-space-1.webp",
+          "alt": "Paver patio with fire pit, picnic table, and string lights \u2014 photo 1"
+        },
+        {
+          "file": "pictures--outdoor-space-2.webp",
+          "alt": "Paver patio with fire pit, picnic table, and string lights \u2014 photo 2"
+        },
+        {
+          "file": "pictures--outdoor-space-3.webp",
+          "alt": "Paver patio with fire pit, picnic table, and string lights \u2014 photo 3"
+        },
+        {
+          "file": "pictures--outdoor-space-4.webp",
+          "alt": "Paver patio with fire pit, picnic table, and string lights \u2014 photo 4"
+        }
+      ]
+    },
+    {
+      "title": "Park",
+      "images": [
+        {
+          "file": "pictures--park-1.webp",
+          "alt": "Community park, dock, and swimming area on Lake Cushman \u2014 photo 1"
+        },
+        {
+          "file": "pictures--park-2.webp",
+          "alt": "Community park, dock, and swimming area on Lake Cushman \u2014 photo 2"
+        },
+        {
+          "file": "pictures--park-3.webp",
+          "alt": "Community park, dock, and swimming area on Lake Cushman \u2014 photo 3"
+        },
+        {
+          "file": "pictures--park-4.webp",
+          "alt": "Community park, dock, and swimming area on Lake Cushman \u2014 photo 4"
+        }
+      ]
+    },
+    {
+      "title": "Lake Cushman",
+      "images": [
+        {
+          "file": "pictures--lake-cushman-1.webp",
+          "alt": "Lake Cushman with mountains and open sky \u2014 photo 1"
+        },
+        {
+          "file": "pictures--lake-cushman-2.webp",
+          "alt": "Lake Cushman with mountains and open sky \u2014 photo 2"
+        },
+        {
+          "file": "pictures--lake-cushman-3.webp",
+          "alt": "Lake Cushman with mountains and open sky \u2014 photo 3"
+        },
+        {
+          "file": "pictures--lake-cushman-4.webp",
+          "alt": "Lake Cushman with mountains and open sky \u2014 photo 4"
+        }
+      ]
+    }
+  ]
+}

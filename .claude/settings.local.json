@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -sL \"https://www.macscushmancabin.com/\" -o .firecrawl/home.html)",
+      "Bash(py --version)",
+      "Bash(python \"C:\\\\Users\\\\corba\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-corba-Documents-macscabin\\\\f42a7072-0376-4e12-ba3f-3e52b85fe498\\\\scratchpad\\\\extract.py\")",
+      "Bash(python \"C:\\\\Users\\\\corba\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-corba-Documents-macscabin\\\\f42a7072-0376-4e12-ba3f-3e52b85fe498\\\\scratchpad\\\\gallery_map.py\")",
+      "Bash(python \"C:\\\\Users\\\\corba\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-corba-Documents-macscabin\\\\f42a7072-0376-4e12-ba3f-3e52b85fe498\\\\scratchpad\\\\download_images.py\")",
+      "Bash(python -c ' *)",
+      "Bash(python \"C:\\\\Users\\\\corba\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-corba-Documents-macscabin\\\\f42a7072-0376-4e12-ba3f-3e52b85fe498\\\\scratchpad\\\\retry_pictures.py\")",
+      "Bash(git init *)",
+      "Bash(npm install *)",
+      "Bash(node tools/optimize-images.js)",
+      "Bash(node tools/contact-sheet.js \"local-attractions--\" \"C:\\\\Users\\\\corba\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-corba-Documents-macscabin\\\\f42a7072-0376-4e12-ba3f-3e52b85fe498\\\\scratchpad\\\\attractions-sheet.png\")",
+      "Bash(node tools/contact-sheet.js \"home--\" \"C:\\\\Users\\\\corba\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-corba-Documents-macscabin\\\\f42a7072-0376-4e12-ba3f-3e52b85fe498\\\\scratchpad\\\\home-sheet.png\")",
+      "Bash(node tools/contact-sheet.js \"pictures--\" \"C:\\\\Users\\\\corba\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-corba-Documents-macscabin\\\\f42a7072-0376-4e12-ba3f-3e52b85fe498\\\\scratchpad\\\\pictures-sheet.png\")",
+      "Bash(npx eleventy *)",
+      "Read(//c/Program Files \\\\\\(x86\\\\\\)/Microsoft/Edge/Application/**)",
+      "Read(//c/Program Files/Microsoft/Edge/Application/**)",
+      "Read(//c/Program Files/Google/Chrome/Application/**)",
+      "Bash(where.exe msedge *)",
+      "Bash(\"/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless=new --disable-gpu --window-size=1400,4000 --hide-scrollbars --screenshot=\"C:\\\\\\\\Users\\\\\\\\corba\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\C--Users-corba-Documents-macscabin\\\\\\\\f42a7072-0376-4e12-ba3f-3e52b85fe498\\\\\\\\scratchpad\\\\\\\\home-desktop.png\" --virtual-time-budget=8000 \"http://localhost:8087/\")",
+      "Bash(ls \"/c/Users/corba/AppData/Local/Temp/claude/C--Users-corba-Documents-macscabin/f42a7072-0376-4e12-ba3f-3e52b85fe498/scratchpad/\")",
+      "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless=new --disable-gpu --window-size=1400,4200 --hide-scrollbars --screenshot=C:/Users/corba/AppData/Local/Temp/claude/C--Users-corba-Documents-macscabin/f42a7072-0376-4e12-ba3f-3e52b85fe498/scratchpad/gallery.png --virtual-time-budget=10000 http://localhost:8087/gallery/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"http://localhost:8087/assets/images/local-attractions--division-14-park-100-yards-from-proper.webp\")",
+      "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless=new --disable-gpu --window-size=375,3400 --hide-scrollbars --screenshot=C:/Users/corba/AppData/Local/Temp/claude/C--Users-corba-Documents-macscabin/f42a7072-0376-4e12-ba3f-3e52b85fe498/scratchpad/home-mobile.png --virtual-time-budget=8000 http://localhost:8087/)",
+      "Bash(node -e ' *)",
+      "Bash(python \"C:\\\\Users\\\\corba\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-corba-Documents-macscabin\\\\f42a7072-0376-4e12-ba3f-3e52b85fe498\\\\scratchpad\\\\cms_coverage.py\")",
+      "Bash(pip install *)",
+      "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless=new --disable-gpu --window-size=1400,900 --hide-scrollbars --screenshot=C:/Users/corba/AppData/Local/Temp/claude/C--Users-corba-Documents-macscabin/f42a7072-0376-4e12-ba3f-3e52b85fe498/scratchpad/home-final-top.png --virtual-time-budget=8000 http://localhost:8087/)",
+      "Bash(git add *)",
+      "Bash(git -c core.safecrlf=false commit -m ' *)"
+    ]
+  }
+}

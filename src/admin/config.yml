@@ -1,0 +1,279 @@
+# Sveltia CMS configuration — mirrors the JSON content model in src/_data/.
+# RULES:
+# - The JSON shape is primary; this config mirrors it. Model EVERY key —
+#   an unmodeled key is silently deleted on the next CMS save.
+# - navigation.json is developer-owned and intentionally NOT in the CMS.
+# - After changing this file and deploying, RELOAD /admin/ before editing —
+#   a stale tab saves the old shape.
+#
+# SETUP (one-time, after the GitHub repo exists):
+# 1. Set backend.repo below to the real "owner/repo".
+# 2. Deploy a Sveltia/Decap OAuth worker (e.g. sveltia-cms-auth on Cloudflare
+#    Workers), register a GitHub OAuth app, then set base_url to the worker URL.
+
+backend:
+  name: github
+  repo: OWNER/macscabin # TODO: set after creating the GitHub repository
+  branch: main
+  # base_url: https://your-oauth-worker.example.workers.dev # TODO: OAuth worker
+
+site_url: https://www.macscushmancabin.com
+display_url: https://www.macscushmancabin.com
+
+media_folder: src/assets/images
+public_folder: /assets/images
+
+media_libraries:
+  default:
+    config:
+      max_file_size: 10485760 # backstop only — transform runs before this check
+      slugify_filename: true
+      transformations:
+        raster_image:
+          format: webp
+          quality: 85
+          width: 1600
+          height: 1600
+        svg:
+          optimize: true
+
+collections:
+  - name: settings
+    label: Site Settings
+    icon: settings
+    editor:
+      preview: false
+    files:
+      - name: site
+        label: Site Info & Booking
+        file: src/_data/site.json
+        fields:
+          - { name: name, label: Site Name, widget: string }
+          - { name: shortName, label: Short Name (header), widget: string }
+          - { name: tagline, label: Tagline, widget: string }
+          - { name: description, label: SEO Description, widget: text, hint: "Shows in search results. One or two sentences." }
+          - name: address
+            label: Address
+            widget: object
+            fields:
+              - { name: street, label: Street, widget: string }
+              - { name: city, label: City, widget: string }
+              - { name: state, label: State, widget: string }
+              - { name: zip, label: ZIP, widget: string, pattern: ['^\d{5}$', 'Must be a 5-digit ZIP code'] }
+          - { name: phone, label: Phone, widget: string }
+          - { name: email, label: Email, widget: string, pattern: ['^[^@\s]+@[^@\s]+\.[^@\s]+$', 'Must be a valid email address'] }
+          - name: booking
+            label: Booking
+            widget: object
+            hint: "Where the Book buttons send guests."
+            fields:
+              - { name: vrboUrl, label: Vrbo Listing URL, widget: string, pattern: ['^https://', 'Must be a full https:// URL'] }
+              - { name: calendarEmbedUrl, label: Availability Calendar Embed URL, widget: string, hint: "Google Calendar embed URL synced from Vrbo. Leave as-is unless the calendar changes." }
+          - { name: inquiryFormUrl, label: Inquiry Form URL, widget: string, pattern: ['^https://', 'Must be a full https:// URL'] }
+          - name: social
+            label: Social Links
+            widget: object
+            fields:
+              - { name: facebook, label: Facebook URL, widget: string }
+              - { name: instagram, label: Instagram URL, widget: string }
+          - name: legal
+            label: Legal Pages
+            widget: object
+            fields:
+              - { name: privacyUrl, label: Privacy Policy URL, widget: string }
+              - { name: tosUrl, label: Terms of Service URL, widget: string }
+          - { name: analyticsId, label: Google Analytics ID, widget: hidden, default: "" }
+
+  - name: pages
+    label: Pages
+    icon: description
+    editor:
+      preview: false
+    files:
+      - name: home
+        label: Home Page
+        file: src/_data/home.json
+        fields:
+          - name: hero
+            label: Hero
+            widget: object
+            hint: "The big banner at the top of the home page."
+            fields:
+              - { name: heading, label: Heading, widget: string }
+              - { name: subheading, label: Subheading, widget: text }
+              - { name: image, label: Background Image, widget: image, hint: "A wide landscape photo works best." }
+              - { name: imageAlt, label: Image Description (alt text), widget: string }
+          - name: highlights
+            label: Highlight Chips
+            widget: list
+            hint: "Short facts shown as pills under the hero (e.g. '4 Bedrooms + Bunk Room')."
+            fields:
+              - { name: label, label: Label, widget: string }
+          - { name: intro, label: Intro Paragraph, widget: text }
+          - name: featureCards
+            label: Feature Cards
+            widget: list
+            hint: "The three photo cards on the home page."
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: text, label: Text, widget: text }
+              - { name: image, label: Image, widget: image }
+              - { name: imageAlt, label: Image Description (alt text), widget: string }
+              - name: link
+                label: Link
+                widget: object
+                fields:
+                  - { name: label, label: Link Label, widget: string }
+                  - { name: url, label: Link URL, widget: string, hint: "Site page like /book/ or a full https:// URL." }
+          - name: park
+            label: Park & Boat Launch Section
+            widget: object
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: text, label: Text, widget: text }
+              - name: items
+                label: Bullet Points
+                widget: list
+                field: { name: item, label: Item, widget: string }
+              - { name: image, label: Image, widget: image }
+              - { name: imageAlt, label: Image Description (alt text), widget: string }
+          - name: goodToKnow
+            label: Good to Know Chips
+            widget: list
+            field: { name: item, label: Item, widget: string }
+
+      - name: cabin
+        label: The Cabin Page
+        file: src/_data/cabin.json
+        fields:
+          - { name: title, label: Page Title, widget: string }
+          - { name: intro, label: Intro, widget: text }
+          - name: amenityGroups
+            label: Amenity Groups
+            widget: list
+            hint: "Each group becomes a card (e.g. 'Full Kitchen' with its list)."
+            fields:
+              - { name: title, label: Group Title, widget: string }
+              - name: items
+                label: Items
+                widget: list
+                field: { name: item, label: Item, widget: string }
+          - name: bedrooms
+            label: Sleeping Arrangements
+            widget: list
+            fields:
+              - { name: name, label: Room Name, widget: string }
+              - { name: level, label: Level, widget: select, options: [Upstairs, Main level, Lower level] }
+              - { name: beds, label: Beds, widget: string }
+          - name: petPolicy
+            label: Pet Policy
+            widget: object
+            fields:
+              - { name: title, label: Title, widget: string }
+              - name: items
+                label: Items
+                widget: list
+                field: { name: item, label: Item, widget: string }
+          - name: rules
+            label: House Rules
+            widget: object
+            fields:
+              - { name: title, label: Title, widget: string }
+              - name: items
+                label: Items
+                widget: list
+                field: { name: item, label: Item, widget: string }
+
+      - name: gallery
+        label: Gallery Page
+        file: src/_data/gallery.json
+        fields:
+          - { name: intro, label: Intro, widget: text }
+          - name: sections
+            label: Photo Sections
+            widget: list
+            hint: "Each section is a room or area with its photos."
+            fields:
+              - { name: title, label: Section Title, widget: string }
+              - name: images
+                label: Photos
+                widget: list
+                fields:
+                  - { name: file, label: Photo, widget: image }
+                  - { name: alt, label: Photo Description (alt text), widget: string, hint: "Describe the photo for screen readers and search engines." }
+
+      - name: attractions
+        label: Area Guide Page
+        file: src/_data/attractions.json
+        fields:
+          - { name: title, label: Page Title, widget: string }
+          - { name: intro, label: Intro, widget: text }
+          - name: featured
+            label: Featured Attraction
+            widget: object
+            hint: "The big highlighted attraction at the top (the LCMC park)."
+            fields:
+              - { name: name, label: Name, widget: string }
+              - { name: tag, label: Category, widget: select, options: [On the Lake, Hiking, Parks & Play, Golf & Games] }
+              - { name: distance, label: Distance, widget: string, hint: "e.g. '150 yards — a 1-minute walk' or '10 min drive'" }
+              - { name: description, label: Description, widget: text }
+              - { name: image, label: Image, widget: image }
+              - { name: imageAlt, label: Image Description (alt text), widget: string }
+          - name: categories
+            label: Categories
+            widget: list
+            hint: "The set of category tags attractions can use."
+            field: { name: category, label: Category, widget: string }
+          - name: attractions
+            label: Attractions
+            widget: list
+            fields:
+              - { name: name, label: Name, widget: string }
+              - { name: tag, label: Category, widget: select, options: [On the Lake, Hiking, Parks & Play, Golf & Games] }
+              - { name: distance, label: Distance, widget: string }
+              - { name: description, label: Description, widget: text }
+              - { name: image, label: Image, widget: image, required: false }
+              - { name: imageAlt, label: Image Description (alt text), widget: string, required: false }
+              - name: links
+                label: Links
+                widget: list
+                required: false
+                hint: "Link to the attraction's own website or a map — never to shared folders."
+                fields:
+                  - { name: label, label: Label, widget: string }
+                  - { name: url, label: URL, widget: string, pattern: ['^https://', 'Must be a full https:// URL'] }
+
+      - name: faqs
+        label: FAQs Page
+        file: src/_data/faqs.json
+        fields:
+          - { name: title, label: Page Title, widget: string }
+          - { name: intro, label: Intro, widget: text }
+          - name: items
+            label: Questions
+            widget: list
+            fields:
+              - { name: question, label: Question, widget: string }
+              - { name: answer, label: Answer, widget: text }
+
+      - name: about
+        label: About Page
+        file: src/_data/about.json
+        fields:
+          - { name: title, label: Page Title, widget: string }
+          - name: story
+            label: Story Paragraphs
+            widget: list
+            field: { name: paragraph, label: Paragraph, widget: text }
+          - name: history
+            label: History Blocks
+            widget: list
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: text, label: Text, widget: text }
+              - name: links
+                label: Links
+                widget: list
+                fields:
+                  - { name: label, label: Label, widget: string }
+                  - { name: url, label: URL, widget: string, pattern: ['^https://', 'Must be a full https:// URL'] }

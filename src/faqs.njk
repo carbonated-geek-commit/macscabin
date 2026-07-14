@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+title: FAQs
+description: Frequently asked questions about staying at the MACS Cushman Cabin — check-in, directions, pets, parking, and more.
+permalink: /faqs/
+---
+<div class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Before You Arrive</p>
+    <h1>{{ faqs.title }}</h1>
+    <p>{{ faqs.intro }}</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap" style="max-width: 820px;">
+    {%- for f in faqs.items %}
+    <details class="faq"{% if loop.first %} open{% endif %}>
+      <summary>{{ f.question }}</summary>
+      <div class="faq__body"><p>{{ f.answer }}</p></div>
+    </details>
+    {%- endfor %}
+    <p class="mt-4">Still have a question? <a href="/contact/">Get in touch</a> — we're happy to help.</p>
+  </div>
+</section>

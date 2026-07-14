@@ -1,0 +1,57 @@
+---
+layout: layouts/base.njk
+title: About
+description: The story of the MACS Cushman Cabin and the history of Lake Cushman — the Cushman Dam and the Antlers Lodge.
+permalink: /about/
+---
+<div class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Our Story</p>
+    <h1>{{ about.title }}</h1>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap split">
+    <div>
+      {%- for p in about.story %}
+      <p{% if not loop.first %} class="mt-2"{% endif %}>{{ p }}</p>
+      {%- endfor %}
+    </div>
+    <div class="split__img">
+      <img src="/assets/images/pictures--exterior-3.webp" alt="The cabin seen from the road, with its deck and staircase among the trees" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Lake Cushman History</p>
+      <h2>A lake with a story</h2>
+    </div>
+    <div class="grid grid--2">
+      {%- for h in about.history %}
+      <article class="card">
+        <div class="card__body">
+          <h3>{{ h.title }}</h3>
+          <p>{{ h.text }}</p>
+          <div class="card__links">
+            {%- for l in h.links %}
+            <a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }} ↗</a>
+            {%- endfor %}
+          </div>
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark cta-band">
+  <div class="wrap">
+    <h2>Come write your own chapter</h2>
+    <p>The lake's been gathering stories since 1899. Add a few of yours.</p>
+    <a class="btn btn--primary btn--lg" href="/book/" data-analytics="about_book_click">Book Your Stay</a>
+  </div>
+</section>

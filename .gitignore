@@ -1,0 +1,15 @@
+node_modules/
+_site/
+.firecrawl/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# secrets — never commit keys
+*.pem
+*-key.json
+*service-account*.json
+gen-lang-client-*.json
+.env
+.env.*

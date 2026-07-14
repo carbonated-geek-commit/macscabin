@@ -1,0 +1,28 @@
+{
+  "name": "MACS Cushman Cabin",
+  "shortName": "MACS Cabin",
+  "tagline": "Spacious cabin with modern amenities & Lake Cushman access",
+  "description": "A four-bedroom vacation cabin in Hoodsport, WA, one minute from Lake Cushman's private park, dock, and boat launch — at the doorstep of Olympic National Park.",
+  "address": {
+    "street": "150 North Deer Lane West",
+    "city": "Hoodsport",
+    "state": "WA",
+    "zip": "98548"
+  },
+  "phone": "(253) 254-6862",
+  "email": "MACSCushmanCabin@gmail.com",
+  "booking": {
+    "vrboUrl": "https://www.vrbo.com/4400262?dateless=true",
+    "calendarEmbedUrl": "https://www.google.com/calendar/embed?color=%239a9cff&src=13m6o8snpofub77b89e0dhq69k631nka@import.calendar.google.com"
+  },
+  "inquiryFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdCpHIQQxzkT625yNfXYiWAmOpkNeps9B8GfTIB9AsB3-Lzfg/viewform",
+  "social": {
+    "facebook": "https://www.facebook.com/share/1Bcj6BB75m/",
+    "instagram": "https://www.instagram.com/macscushmancabin"
+  },
+  "legal": {
+    "privacyUrl": "https://app.enzuzo.com/policies/privacy/d17b351e-53af-11f1-83c5-4b9cc8914c3d",
+    "tosUrl": "https://app.enzuzo.com/policies/tos/d17b351e-53af-11f1-83c5-4b9cc8914c3d"
+  },
+  "analyticsId": ""
+}

@@ -1,0 +1,69 @@
+---
+layout: layouts/base.njk
+title: Area Guide
+description: Things to do near Lake Cushman and Hoodsport — hiking, swimming, golf, parks, and Olympic National Park.
+permalink: /area-guide/
+---
+<div class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Things to Do</p>
+    <h1>{{ attractions.title }}</h1>
+    <p>{{ attractions.intro }}</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap split">
+    <div class="split__img">
+      <img src="/assets/images/{{ attractions.featured.image }}" alt="{{ attractions.featured.imageAlt }}">
+    </div>
+    <div>
+      <p class="eyebrow">{{ attractions.featured.distance }}</p>
+      <h2>{{ attractions.featured.name }}</h2>
+      <p class="mt-2">{{ attractions.featured.description }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Nearby</p>
+      <h2>Around the lake &amp; into the Olympics</h2>
+    </div>
+    <div class="grid grid--3">
+      {%- for a in attractions.attractions %}
+      <article class="card">
+        {%- if a.image %}
+        <img class="card__img" src="/assets/images/{{ a.image }}" alt="{{ a.imageAlt }}" loading="lazy">
+        {%- else %}
+        <div class="card__img--empty" aria-hidden="true">◆</div>
+        {%- endif %}
+        <div class="card__body">
+          <div class="card__meta">
+            <span class="tag">{{ a.tag }}</span>
+            <span class="distance">{{ a.distance }}</span>
+          </div>
+          <h3>{{ a.name }}</h3>
+          <p>{{ a.description }}</p>
+          {%- if a.links %}
+          <div class="card__links">
+            {%- for l in a.links %}
+            <a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }} ↗</a>
+            {%- endfor %}
+          </div>
+          {%- endif %}
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark cta-band">
+  <div class="wrap">
+    <h2>Make the cabin your trailhead</h2>
+    <p>All of this, with a hot shower and a fire pit waiting at the end of the day.</p>
+    <a class="btn btn--primary btn--lg" href="/book/" data-analytics="area_book_click">Book Your Stay</a>
+  </div>
+</section>

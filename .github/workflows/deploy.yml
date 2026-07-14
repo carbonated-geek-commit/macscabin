@@ -1,0 +1,59 @@
+# Build & deploy to GitHub Pages.
+# - Deploys on push to main, manual dispatch, and a weekly cron (so any
+#   time-relative content rolls over without a commit).
+# - Reusable via workflow_call so a future content-sync workflow can chain it
+#   (a GITHUB_TOKEN push from another workflow will NOT trigger `on: push`).
+# - PATH_PREFIX: while served at username.github.io/<repo>/ the site needs the
+#   repo sub-path. Once the custom domain (macscushmancabin.com) is attached,
+#   set the repository variable CUSTOM_DOMAIN=true and the prefix flips to /.
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  workflow_call:
+  schedule:
+    - cron: "23 11 * * 1" # weekly rebuild, Mondays 11:23 UTC
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Compute path prefix
+        run: |
+          if [ "${{ vars.CUSTOM_DOMAIN }}" = "true" ]; then
+            echo "PATH_PREFIX=/" >> "$GITHUB_ENV"
+          else
+            echo "PATH_PREFIX=/${GITHUB_REPOSITORY#*/}/" >> "$GITHUB_ENV"
+          fi
+      - run: npx eleventy
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

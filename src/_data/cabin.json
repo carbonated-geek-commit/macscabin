@@ -1,0 +1,67 @@
+{
+  "title": "The Cabin",
+  "intro": "Recently renovated in 2022, the cabin spans three levels and 1,800 square feet — four queen bedrooms, a bunk room, two living rooms, and a bathroom on every floor. Everything below is included with your stay.",
+  "amenityGroups": [
+    {
+      "title": "The Essentials",
+      "items": ["1,800 square feet across three levels", "Fast WiFi (QR code at the door)", "Towels & linens provided", "Card games, board games & puzzles", "Heaters and fans in every bedroom (no A/C)"]
+    },
+    {
+      "title": "Full Kitchen",
+      "items": ["French-door fridge with water & ice", "Electric stovetop & oven", "Dishwasher & microwave", "Coffee maker, espresso machine & bean grinder", "Air fryer, blender, mixer & crock pot", "Waffle maker, griddle & toaster", "Cookware, utensils & dishware"]
+    },
+    {
+      "title": "4 Bedrooms",
+      "items": ["Queen bed in every bedroom", "Dressers & night stands", "Heater and fan in each room", "Desks with monitors in 2 bedrooms — work from the woods"]
+    },
+    {
+      "title": "Bunk Room",
+      "items": ["2 queen bunk beds", "Dresser", "Heater & fan", "A kid favorite"]
+    },
+    {
+      "title": "2 Living Rooms",
+      "items": ["Smart TVs & DVD player", "Plush sectional couches", "Cabinet full of games"]
+    },
+    {
+      "title": "3 Bathrooms — one per level",
+      "items": ["Main level: shower, toilet & sink", "Upper level: toilet & sink", "Lower level: shower, toilet & sink"]
+    },
+    {
+      "title": "Private Outdoor Space",
+      "items": ["Paver patio", "Fire pit with seating", "Picnic table", "Gas grill"]
+    },
+    {
+      "title": "Utilities & Safety",
+      "items": ["Washer & dryer (by request, 5-night minimum stay)", "Utility sink & outdoor hose", "Carbon monoxide detectors on each floor", "Smoke detectors in each room", "Fire extinguisher"]
+    }
+  ],
+  "bedrooms": [
+    { "name": "Deer Bedroom", "level": "Upstairs", "beds": "Queen bed" },
+    { "name": "Bear Bedroom", "level": "Upstairs", "beds": "Queen bed" },
+    { "name": "Mt Ellinor Bedroom", "level": "Main level", "beds": "Queen bed" },
+    { "name": "Evergreen Bedroom", "level": "Lower level", "beds": "Queen bed" },
+    { "name": "Bunk Room", "level": "Lower level", "beds": "2 queen bunk beds" }
+  ],
+  "petPolicy": {
+    "title": "Bringing Your Dog",
+    "items": [
+      "Up to 2 dogs — no other animals, please",
+      "$15/night pet fee + $15/night non-refundable cleaning fee",
+      "Dogs on leash outside at all times",
+      "Please pick up after your dog and use the trash receptacle",
+      "Large wire dog crate available under the bed in the main-level bedroom",
+      "Clean up pet accidents right away — pet damage may affect your deposit"
+    ]
+  },
+  "rules": {
+    "title": "House Rules",
+    "items": [
+      "Check-in after 4:00 PM · Check-out before 11:00 AM",
+      "Refundable deposit of $300",
+      "Minimum age to rent: 25 — younger guests must be accompanied by a parent or legal guardian",
+      "No smoking",
+      "Parking for 4 vehicles in the driveway, free of charge — long enough for a pickup and trailer",
+      "Exterior security cameras only: front, side, and back of home"
+    ]
+  }
+}

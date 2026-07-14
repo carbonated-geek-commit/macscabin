@@ -1,0 +1,50 @@
+{
+  "title": "Frequently Asked Questions",
+  "intro": "Everything guests usually ask before (and during) their stay. Can't find your answer? Just call or email us.",
+  "items": [
+    {
+      "question": "How do I get into the home for my reservation?",
+      "answer": "Head to the back door on the rear porch and enter the code that was emailed to you into the keypad. There's a WiFi QR code on the door in case you don't have cell service, and an alternative entrance just in case. Any issues, don't hesitate to call or email us at (253) 254-6862."
+    },
+    {
+      "question": "How do I get to the cabin?",
+      "answer": "Heading north on US-101: turn left on North Lake Cushman Rd and continue 4.8 miles. Turn left onto Fawn Dr for 0.2 miles (at the Division 14 sign). Then take a right onto N Deer Ln W — the house is on your right in 0.2 miles."
+    },
+    {
+      "question": "Are linens, cookware, and cleaning supplies provided?",
+      "answer": "Yes — all linens, cookware, utensils, and cleaning supplies are provided, along with plenty of toilet paper, paper towels, and dishes, free of charge."
+    },
+    {
+      "question": "Are there games or other activities?",
+      "answer": "Yes! There's a cabinet full of board games, puzzles, and card games, plus two smart TVs and a DVD player. Free internet is provided."
+    },
+    {
+      "question": "Is there a guide to the house and local area?",
+      "answer": "Yes — there's a manual at the cabin that explains everything from connecting to WiFi to using the espresso maker, and it's full of local activities and restaurant menus."
+    },
+    {
+      "question": "Is there parking at the cabin?",
+      "answer": "Plenty — room for up to 4 vehicles, and the driveway is long enough for a pickup and trailer. Just remember to request a boat pass if you plan on bringing a boat."
+    },
+    {
+      "question": "Is there a washer and dryer I can use?",
+      "answer": "Yes, by request you may use the utility room. A minimum stay of 5 nights is required for this request to be approved."
+    },
+    {
+      "question": "Is the property pet friendly?",
+      "answer": "Dogs only, up to 2 per stay. Dogs must be leashed outside, and please pick up after them. A large wire dog crate is available under the bed in the main-level bedroom. A pet fee and cleaning fee apply, and pet damage can affect your deposit."
+    },
+    {
+      "question": "Is there a local coffee stand?",
+      "answer": "Two nearby: Konkani Coffee stand is 5 minutes away, and Hoodsport Coffee Company is 10 minutes away in Hoodsport."
+    },
+    {
+      "question": "Is there a store or gas station nearby?",
+      "answer": "The Lake Store is 5 minutes away — a well-stocked mart with propane, ice, and firewood. Hood Canal Grocery in Hoodsport (10 minutes) is a market, gas station, and ACE hardware store in one, with produce, liquor, boating and fishing gear, camping supplies, and more."
+    },
+    {
+      "question": "How do I get to the park from the cabin?",
+      "answer": "Take a right from the property on N Deer Lane and walk 150 yards to the park. You can't miss it!"
+    }
+  ]
+}

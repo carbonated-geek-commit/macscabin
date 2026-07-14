@@ -1,0 +1,88 @@
+---
+layout: layouts/base.njk
+permalink: /
+---
+<section class="hero">
+  <img class="hero__img" src="/assets/images/{{ home.hero.image }}" alt="{{ home.hero.imageAlt }}" fetchpriority="high">
+  <div class="wrap hero__content">
+    <p class="hero__eyebrow">Hoodsport, Washington · Olympic Peninsula</p>
+    <h1>{{ home.hero.heading }}</h1>
+    <p>{{ home.hero.subheading }}</p>
+    <a class="btn btn--primary btn--lg" href="/book/" data-analytics="hero_book_click">Book Your Stay</a>
+    <a class="btn btn--on-dark btn--lg" href="/gallery/">See the Cabin</a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <ul class="chips">
+      {%- for h in home.highlights %}
+      <li class="chip">{{ h.label }}</li>
+      {%- endfor %}
+    </ul>
+    <p class="lead mt-4">{{ home.intro }}</p>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Why You'll Love It</p>
+      <h2>Lake days, cabin nights</h2>
+    </div>
+    <div class="grid grid--3">
+      {%- for card in home.featureCards %}
+      <article class="card">
+        <img class="card__img" src="/assets/images/{{ card.image }}" alt="{{ card.imageAlt }}" loading="lazy">
+        <div class="card__body">
+          <h3>{{ card.title }}</h3>
+          <p>{{ card.text }}</p>
+          <div class="card__links"><a href="{{ card.link.url }}">{{ card.link.label }} →</a></div>
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div class="split__img">
+      <img src="/assets/images/{{ home.park.image }}" alt="{{ home.park.imageAlt }}" loading="lazy">
+    </div>
+    <div>
+      <p class="eyebrow">150 Yards Away</p>
+      <h2>{{ home.park.title }}</h2>
+      <p class="mt-2">{{ home.park.text }}</p>
+      <ul>
+        {%- for item in home.park.items %}
+        <li>{{ item }}</li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Good to Know</p>
+      <h2>The short version</h2>
+    </div>
+    <ul class="chips">
+      {%- for item in home.goodToKnow %}
+      <li class="chip">{{ item }}</li>
+      {%- endfor %}
+    </ul>
+    <p class="mt-4"><a href="/the-cabin/">Full amenities, house rules &amp; pet policy →</a></p>
+  </div>
+</section>
+
+<section class="section section--dark cta-band">
+  <div class="wrap">
+    <p class="eyebrow">Ready When You Are</p>
+    <h2>Book your Lake Cushman getaway</h2>
+    <p>Reservations are managed through Vrbo — check availability and lock in your dates.</p>
+    <a class="btn btn--primary btn--lg" href="/book/" data-analytics="cta_band_book_click">Book Your Stay</a>
+  </div>
+</section>
