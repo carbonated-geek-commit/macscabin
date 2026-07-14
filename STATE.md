@@ -26,10 +26,11 @@ Built 2026-07-14 following the shared Web Design & Engineering Standards.
 
 Media library is configured to auto-convert uploads to WebP q85 / 1600px and slugify filenames.
 
-## Deployment — NOT YET LIVE
+## Deployment — LIVE (pending custom domain)
 
+- **Live at https://carbonated-geek-commit.github.io/macscabin/** since 2026-07-14. Repo: `carbonated-geek-commit/macscabin`, Pages source = GitHub Actions.
 - `.github/workflows/deploy.yml`: deploy on push to main + `workflow_dispatch` + weekly cron (Mon 11:23 UTC) + `workflow_call` (so a future sync can chain it — a `GITHUB_TOKEN` push from another workflow will not trigger `on: push`).
-- To go live: create the GitHub repo, push, enable Pages with **GitHub Actions** source. Then point the `macscushmancabin.com` DNS at Pages, add the custom domain in repo settings, and set repo variable `CUSTOM_DOMAIN=true`.
+- **Domain cutover (owner action):** point `macscushmancabin.com` DNS at Pages (CNAME `www` → `carbonated-geek-commit.github.io`, apex A records → GitHub Pages IPs), add the custom domain in repo Settings → Pages, wait for the TLS cert, then set repo variable `CUSTOM_DOMAIN=true` (flips PATH_PREFIX to `/`) and re-run the deploy.
 - The old Google Site should be retired only after the domain cutover.
 
 ## Open threads / decisions made on the owner's behalf (confirm with owner)
