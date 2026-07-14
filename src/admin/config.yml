@@ -13,7 +13,7 @@
 
 backend:
   name: github
-  repo: OWNER/macscabin # TODO: set after creating the GitHub repository
+  repo: carbonated-geek-commit/macscabin
   branch: main
   # base_url: https://your-oauth-worker.example.workers.dev # TODO: OAuth worker
 
