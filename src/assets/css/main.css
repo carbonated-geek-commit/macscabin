@@ -133,7 +133,7 @@ h4 { font-size: 1.05rem; }
 .btn--ghost:hover { background: var(--green); color: #fff; }
 .btn--on-dark { border-color: var(--ink-on-dark); color: var(--ink-on-dark); background: transparent; }
 .btn--on-dark:hover { background: var(--ink-on-dark); color: var(--ink); }
-.btn--lg { padding: 16px 36px; font-size: 1.02rem; }
+.btn--lg { padding: 16px 36px; }
 
 /* Header ------------------------------------------------------------------- */
 .site-header {
@@ -177,7 +177,15 @@ h4 { font-size: 1.05rem; }
 }
 .nav a:hover { color: var(--ink); background: var(--bg-alt); }
 .nav a[aria-current="page"] { color: var(--cedar); }
-.nav .btn { margin-left: 10px; padding: 10px 20px; font-size: 0.85rem; }
+/* The generic `.nav a` rules out-rank `.btn` — restore the button's own
+   typography so its lettering matches every other Book button. */
+.nav a.btn {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
 .nav a.btn--primary { color: #fff; }
 .nav a.btn--primary:hover { color: #fff; background: var(--cedar-hover); }
 
