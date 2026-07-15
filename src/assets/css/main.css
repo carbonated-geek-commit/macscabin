@@ -45,6 +45,11 @@ body {
   color: var(--body);
   background: var(--bg);
   -webkit-font-smoothing: antialiased;
+  /* sticky footer: on short pages the FOOTER grows to fill the leftover
+     viewport space (dark to the bottom edge), rather than leaving a gap */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 img, svg, video { display: block; max-width: 100%; }
 input, button, textarea, select { font: inherit; }
@@ -409,17 +414,34 @@ h4 { font-size: 1.05rem; }
 .cta-band p { max-width: 40em; margin: 0 auto 28px; }
 
 /* Footer ------------------------------------------------------------------- */
-.site-footer { background: var(--bg-dark); color: var(--muted-on-dark); padding-block: 56px 32px; font-size: 0.97rem; }
+.site-footer {
+  background: var(--bg-dark);
+  color: var(--muted-on-dark);
+  padding-block: 0 32px;
+  font-size: 0.97rem;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.site-footer > .wrap { flex: 1; display: flex; flex-direction: column; width: 100%; }
 .site-footer a { color: var(--ink-on-dark); }
 .site-footer a:hover { color: #d9a06b; }
-.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+  border-top: 1px solid rgba(245, 241, 232, 0.15);
+  padding-top: 48px;
+  flex: 1;
+  align-content: start;
+}
 @media (max-width: 900px) { .footer-grid { grid-template-columns: 1fr; } }
 .footer-brand { font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; color: var(--ink-on-dark); margin-bottom: 10px; }
 .site-footer .footer-h { color: var(--ink-on-dark); font-family: var(--font-body); font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 14px; }
 .site-footer ul { list-style: none; padding: 0; display: grid; gap: 8px; }
 .footer-legal {
-  border-top: 1px solid rgba(245, 241, 232, 0.15);
-  padding-top: 24px;
+  padding-top: 8px;
   display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between;
   font-size: 0.88rem;
 }
