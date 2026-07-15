@@ -429,15 +429,17 @@ h4 { font-size: 1.05rem; }
 .footer-grid {
   display: grid;
   grid-template-columns: 1.4fr 1.8fr 1fr;
-  gap: 40px;
+  /* column gap ≈ half the brand column's width at full layout width */
+  gap: 40px clamp(48px, 12vw, 140px);
   margin-bottom: 40px;
   border-top: 1px solid rgba(245, 241, 232, 0.15);
   padding-top: 48px;
   flex: 1;
   align-content: start;
 }
-/* Site map flows down 3 rows then into the next column — keeps the footer short */
-.footer-links {
+/* Site map flows down 3 rows then into the next column — keeps the footer short.
+   Selector must out-rank the generic `.site-footer ul` rule below. */
+.site-footer ul.footer-links {
   display: grid;
   grid-template-rows: repeat(3, auto);
   grid-auto-flow: column;
