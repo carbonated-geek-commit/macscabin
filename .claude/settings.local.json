@@ -29,7 +29,16 @@
       "Bash(pip install *)",
       "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless=new --disable-gpu --window-size=1400,900 --hide-scrollbars --screenshot=C:/Users/corba/AppData/Local/Temp/claude/C--Users-corba-Documents-macscabin/f42a7072-0376-4e12-ba3f-3e52b85fe498/scratchpad/home-final-top.png --virtual-time-budget=8000 http://localhost:8087/)",
       "Bash(git add *)",
-      "Bash(git -c core.safecrlf=false commit -m ' *)"
+      "Bash(git -c core.safecrlf=false commit -m ' *)",
+      "Bash(gh auth *)",
+      "Bash(gh api *)",
+      "Bash(git branch *)",
+      "Bash(git -c core.safecrlf=false commit -q -m 'Point CMS backend at the live repository *)",
+      "Bash(gh repo *)",
+      "Bash(gh run *)",
+      "Bash(git -c core.safecrlf=false commit -q -m 'Record live deployment state *)",
+      "Bash(git push *)",
+      "Bash(git -c core.safecrlf=false commit -q -m 'Enable GA4 with lead-qualification event structure *)"
     ]
   }
 }

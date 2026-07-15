@@ -41,15 +41,26 @@
   }
 
   /* Declarative analytics: one delegated listener, data-analytics="event_name" */
+  function track(name, params) {
+    if (typeof window.gtag === "function") window.gtag("event", name, params || {});
+  }
+
   document.addEventListener("click", function (e) {
     var el = e.target.closest("[data-analytics]");
-    if (!el || typeof window.gtag !== "function") return;
+    if (!el) return;
     var params = {};
     for (var key in el.dataset) {
       if (key !== "analytics" && key.indexOf("analytics") === 0) {
         params[key.replace(/^analytics/, "").toLowerCase()] = el.dataset[key];
       }
     }
-    window.gtag("event", el.dataset.analytics, params);
+    track(el.dataset.analytics, params);
+  });
+
+  /* FAQ research signal: fire once per question open (not on close) */
+  document.querySelectorAll("details.faq").forEach(function (d) {
+    d.addEventListener("toggle", function () {
+      if (d.open) track("faq_open", { question: d.querySelector("summary").textContent.trim() });
+    });
   });
 })();

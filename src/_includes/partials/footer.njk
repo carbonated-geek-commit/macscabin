@@ -24,9 +24,9 @@
       <div>
         <h2 class="footer-h">Get in Touch</h2>
         <ul>
-          <li><a href="tel:+12532546862">{{ site.phone }}</a></li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-          <li><a href="{{ site.booking.vrboUrl }}" target="_blank" rel="noopener">Book on Vrbo</a></li>
+          <li><a href="tel:+12532546862" data-analytics="contact_click" data-analytics-method="phone" data-analytics-location="footer">{{ site.phone }}</a></li>
+          <li><a href="mailto:{{ site.email }}" data-analytics="contact_click" data-analytics-method="email" data-analytics-location="footer">{{ site.email }}</a></li>
+          <li><a href="{{ site.booking.vrboUrl }}" target="_blank" rel="noopener" data-analytics="vrbo_outbound_click" data-analytics-location="footer">Book on Vrbo</a></li>
         </ul>
       </div>
     </div>

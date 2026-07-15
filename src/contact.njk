@@ -19,11 +19,11 @@ permalink: /contact/
       <ul class="contact-list mt-4">
         <li>
           <strong>Phone</strong>
-          <a href="tel:+12532546862">{{ site.phone }}</a>
+          <a href="tel:+12532546862" data-analytics="contact_click" data-analytics-method="phone" data-analytics-location="contact_page">{{ site.phone }}</a>
         </li>
         <li>
           <strong>Email</strong>
-          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+          <a href="mailto:{{ site.email }}" data-analytics="contact_click" data-analytics-method="email" data-analytics-location="contact_page">{{ site.email }}</a>
         </li>
         <li>
           <strong>The Cabin</strong>
@@ -39,7 +39,7 @@ permalink: /contact/
     <div>
       <h2>Send an inquiry</h2>
       <p class="mt-2">Planning a stay and want to check something first — group size, boat passes, longer stays? Use the inquiry form and we'll get back to you.</p>
-      <p class="mt-2"><a class="btn btn--ghost" href="{{ site.inquiryFormUrl }}" target="_blank" rel="noopener" data-analytics="inquiry_form_click">Open Inquiry Form ↗</a></p>
+      <p class="mt-2"><a class="btn btn--ghost" href="{{ site.inquiryFormUrl }}" target="_blank" rel="noopener" data-analytics="inquiry_form_click" data-analytics-location="contact_page">Open Inquiry Form ↗</a></p>
       <p class="muted mt-4">Ready to book? Head straight to <a href="/book/">reservations</a>.</p>
     </div>
   </div>

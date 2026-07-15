@@ -24,7 +24,7 @@ permalink: /gallery/
       <h2 id="{{ s.title | slug2 }}">{{ s.title }}</h2>
       <div class="gallery-grid">
         {%- for img in s.images %}
-        <button type="button" data-lightbox aria-label="View larger: {{ img.alt }}">
+        <button type="button" data-lightbox data-analytics="gallery_photo_open" data-analytics-section="{{ s.title }}" aria-label="View larger: {{ img.alt }}">
           <img src="/assets/images/{{ img.file }}" alt="{{ img.alt }}" loading="lazy">
         </button>
         {%- endfor %}

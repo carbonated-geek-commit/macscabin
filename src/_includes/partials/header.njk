@@ -14,7 +14,7 @@
       {%- for item in navigation.items %}
       <a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
       {%- endfor %}
-      <a class="btn btn--primary" href="{{ navigation.cta.url }}" data-analytics="nav_book_click">{{ navigation.cta.label }}</a>
+      <a class="btn btn--primary" href="{{ navigation.cta.url }}" data-analytics="book_cta_click" data-analytics-location="header">{{ navigation.cta.label }}</a>
     </nav>
   </div>
 </header>
