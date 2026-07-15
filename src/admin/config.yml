@@ -135,6 +135,8 @@ collections:
                 label: Bullet Points
                 widget: list
                 field: { name: item, label: Item, widget: string }
+              - { name: updated, label: Fees Last Updated, widget: string, hint: "e.g. 07/2026 — bump this whenever the LCMC fees change.", required: false }
+              - { name: note, label: Price Disclaimer, widget: string, required: false }
               - { name: image, label: Image, widget: image }
               - { name: imageAlt, label: Image Description (alt text), widget: string }
           - name: goodToKnow

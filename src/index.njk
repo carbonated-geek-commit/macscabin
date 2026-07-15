@@ -59,6 +59,9 @@ permalink: /
         <li>{{ item }}</li>
         {%- endfor %}
       </ul>
+      {%- if home.park.note %}
+      <p class="muted mt-2" style="font-size: 0.92rem;">{{ home.park.note }}{% if home.park.updated %} <em>Last updated {{ home.park.updated }}.</em>{% endif %}</p>
+      {%- endif %}
     </div>
   </div>
 </section>
