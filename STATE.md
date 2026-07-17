@@ -36,7 +36,7 @@ Media library is configured to auto-convert uploads to WebP q85 / 1600px and slu
 ## Open threads / decisions made on the owner's behalf (confirm with owner)
 
 - **Minimum age discrepancy**: old site said 25 on the home page ("2 5" typo included) but 21 on the About page. Standardized on **25** everywhere. Confirm.
-- **IA change**: "Pictures" → "Gallery"; "Local Attractions" → "Area Guide"; "Book a Reservation" → "Book"; "Inquiry" page folded into Contact (links to the same Google Form). Old Google-Sites URLs (/pictures, /local-attractions, /book-a-reservation, /inquiry) should get redirects if the host allows, or at least the 404 page covers them.
+- **IA change**: "Pictures" → "Gallery"; "Local Attractions" → "Area Guide"; "Book a Reservation" → "Book"; "Inquiry" page folded into Contact (links to the same Google Form). Old Google-Sites URLs (/pictures, /local-attractions, /book-a-reservation, /inquiry) redirect to the new pages via meta-refresh stubs (`src/redirects.njk`, developer-owned — GitHub Pages has no server redirects).
 - **Availability calendar**: kept the existing public Google Calendar embed (an import calendar fed by Vrbo) on /book/. Account-neutral enough, but a direct Vrbo ics or widget would be cleaner.
 - **Analytics**: `site.analyticsId` is empty → no tag is emitted. Fill it to enable GA4 (privacy-flags already configured; events wired: nav/hero/cta book clicks, vrbo_outbound_click, inquiry_form_click, social_click).
 - **Copy**: hero heading, card titles, and section copy are new (the old site's copy was reused where it existed). Owner should review tone.
