@@ -1,0 +1,28 @@
+---
+# Old Google-Sites URLs → new pages. GitHub Pages has no server redirects,
+# so each legacy path gets a meta-refresh stub. Developer-owned, not in the CMS.
+pagination:
+  data: redirects
+  size: 1
+  alias: redirect
+redirects:
+  - { from: "/pictures", to: "/gallery/" }
+  - { from: "/local-attractions", to: "/area-guide/" }
+  - { from: "/book-a-reservation", to: "/book/" }
+  - { from: "/inquiry", to: "/contact/" }
+permalink: "{{ redirect.from }}/index.html"
+eleventyExcludeFromCollections: true
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redirecting…</title>
+  <link rel="canonical" href="{{ redirect.to }}">
+  <meta http-equiv="refresh" content="0; url={{ redirect.to }}">
+</head>
+<body>
+  <p>This page has moved. If you aren't redirected automatically, continue to <a href="{{ redirect.to }}">{{ redirect.to }}</a>.</p>
+</body>
+</html>
